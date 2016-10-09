@@ -2,10 +2,13 @@
 
 namespace App\Http\Requests;
 
+use Flugg\Responder\Traits\ThrowsApiErrors;
 use Illuminate\Foundation\Http\FormRequest;
 
 class LectureRequest extends FormRequest
 {
+    use ThrowsApiErrors;
+
     /**
      * Determine if the user is authorized to make this request.
      *

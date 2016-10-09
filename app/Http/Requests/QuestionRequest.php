@@ -6,6 +6,8 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class QuestionRequest extends FormRequest
 {
+    use ThrowsApiErrors;
+
     /**
      * Determine if the user is authorized to make this request.
      *
