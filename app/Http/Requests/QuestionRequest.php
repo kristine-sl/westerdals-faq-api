@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Flugg\Responder\Traits\ThrowsApiErrors;
 use Illuminate\Foundation\Http\FormRequest;
 
 class QuestionRequest extends FormRequest
