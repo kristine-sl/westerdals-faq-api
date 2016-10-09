@@ -170,6 +170,7 @@ return [
         Laravel\Scout\ScoutServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         Irazasyed\JwtAuthGuard\JwtAuthGuardServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
 
         /*
          * Application Service Providers...
