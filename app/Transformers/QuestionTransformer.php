@@ -22,8 +22,8 @@ class QuestionTransformer extends Transformer
             'deletedAt' => (string) $question->deleted_at ?: null,
             'description' => (string) $question->description,
             'id' => (int) $question->id,
-            'lectureId' => (string) $question->lecture_id
-            'updatedAt' => (string) $question->updated_at ?: null,
+            'lectureId' => (string) $question->lecture_id,
+            'updatedAt' => (string) $question->updated_at ?: null
         ];
     }
 }
