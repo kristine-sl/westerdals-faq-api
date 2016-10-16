@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\QuestionPosted;
 use App\Http\Requests\QuestionRequest;
 use App\Question;
 use Carbon\Carbon;
@@ -48,6 +49,8 @@ class QuestionsController extends Controller
             'answer' => null,
             'answered_at' => null
         ]));
+
+        event(QuestionPosted::class, $question);
 
         $question->load($request->with ?: []);
 

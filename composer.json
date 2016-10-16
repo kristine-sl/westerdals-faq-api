@@ -12,7 +12,8 @@
         "algolia/algoliasearch-client-php": "^1.10",
         "tymon/jwt-auth": "^1.0@dev",
         "irazasyed/jwt-auth-guard": "^1.0",
-        "barryvdh/laravel-cors": "^0.8.2"
+        "barryvdh/laravel-cors": "^0.8.2",
+        "pusher/pusher-php-server": "^2.6"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

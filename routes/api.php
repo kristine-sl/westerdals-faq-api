@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('lol', function(){
+    event(new \App\Events\QuestionPosted());
+});
+
 Route::post('sessions', 'SessionsController@store');
 
 Route::post('users', 'UsersController@store');
